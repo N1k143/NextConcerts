@@ -1,5 +1,6 @@
 'use client'
 import { Filters } from "@/components/shared/filters";
+import { LoaderShows } from "@/components/shared/loader-shows";
 import { Showcard } from "@/components/shared/show-card";
 import { Showlist } from "@/components/shared/show-list";
 import { Title } from "@/components/shared/title";
@@ -19,7 +20,10 @@ export default function Home() {
   <>
     <Title>Checkout these amazing concerts in Graz</Title>
     <Filters/>
-    <Showlist/>
+    <LoaderShows>
+  <Showlist />
+</LoaderShows>
+
   </>
   );
 }

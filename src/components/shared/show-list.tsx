@@ -17,7 +17,7 @@ export const Showlist:React.FC<Props> = ({className}) => {
             <div className={cn("grid grid-cols-4 gap-4 mt-4", className)}>
                 {
                     isLoading ? 
-                    [...new Array(10)].map((_, index) =>  <Skeleton key={index} className="w-[250px] h-[250px]"/>)
+                    [...new Array(10)].map((_, index) =>  <Skeleton key={index} className="w-[250px] h-[200px]"/>)
                     : shows.map((show) => <Showcard show={show} key={show.id}></Showcard>)
                 }
 
